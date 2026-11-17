@@ -40,8 +40,9 @@ Rust와 Windows 네이티브 UI로 구현했으며, 작은 창과 필요한 기�
 
 ## 다운로드와 실행
 
-**현재 이 저장소에는 소스가 공개되어 있으며, GitHub Releases의 실행 파일 배포는 아직 게시하지 않았습니다.** GitHub의 **Code → Download ZIP**은 소스 압축 파일입니다. 직접 실행 파일을 만들려면 아래의 [소스에서 빌드하기](#소스에서-빌드하기)를 따르세요.
+Windows x64용 실행 파일은 [GitHub Releases](https://github.com/PN-7/sideglow/releases)에서 다운로드할 수 있습니다. 배포 ZIP을 다운로드한 후 압축을 풀어 사용하세요.
 
+GitHub의 **Code → Download ZIP**은 실행 파일이 아닌 소스 코드 압축 파일입니다. 직접 빌드하려면 아래의 [소스에서 빌드하기](#소스에서-빌드하기)를 참고하세요.
 Windows x64용 실행 파일이 포함된 배포 ZIP을 받은 경우:
 
 1. Windows x64용 Sideglow 배포 ZIP을 준비합니다.
