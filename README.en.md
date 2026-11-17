@@ -40,8 +40,9 @@ Built with Rust and a native Windows UI, Sideglow focuses on a small window and 
 
 ## Download and run
 
-**The source is currently available in this repository, but an executable release has not yet been published on GitHub Releases.** GitHub's **Code → Download ZIP** downloads the source archive. To build the executable yourself, follow [Building from source](#building-from-source) below.
+Download the Windows x64 release from [GitHub Releases](https://github.com/PN-7/sideglow/releases), then extract the ZIP to use Sideglow.
 
+GitHub's **Code → Download ZIP** downloads the source code, not the executable release. To build it yourself, see [Building from source](#building-from-source) below.
 If you have received a distribution ZIP containing the Windows x64 executable:
 
 1. Obtain the Sideglow distribution ZIP for Windows x64.
