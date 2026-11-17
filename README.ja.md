@@ -8,7 +8,7 @@ Sideglowは、Discordチャンネルの会話をゲーム画面に重ねて表�
 
 RustとWindowsのネイティブUIで実装し、小さなウィンドウと必要な機能に重点を置いています。DiscordのPCアプリと併用します。ゲーム内チャットの読み取りや、OCRによる画面の翻訳には対応していません。
 
-> **プレビュー · 0.5.0-preview.7**
+> **[Sideglow](https://github.com/PN-7/sideglow/releases)**
 
 ## 始める前に
 
