@@ -8,7 +8,7 @@ Sideglow is a Windows chat window that displays conversations from a Discord cha
 
 Built with Rust and a native Windows UI, Sideglow focuses on a small window and essential features. It works alongside the Discord desktop app. It does not read a game's own chat or translate the screen using OCR.
 
-> **Preview · 0.5.0-preview.7**
+> **[Sideglow](https://github.com/PN-7/sideglow/releases)**
 
 ## Before you start
 
