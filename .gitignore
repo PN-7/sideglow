@@ -1,0 +1,19 @@
+# Build output and local tools
+/target/
+/dist/
+/SHA256SUMS
+*.exe
+*.pdb
+*.dmp
+
+# Local connection credentials and private configuration
+.env
+.env.*
+!*.example
+settings.json
+rpc-session.bin
+*.sideglow.json
+*.whisper.json
+/relay/config.json
+/relay/*.pem
+/relay/*.key

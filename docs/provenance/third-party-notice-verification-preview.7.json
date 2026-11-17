@@ -1,0 +1,1038 @@
+{
+  "schema_version": 1,
+  "checked_at_utc": "2026-11-17T16:15:10.250327+00:00",
+  "scope": "Byte comparison of packaged third-party notices with the matching locked crate archives, official Rust 1.99.1 component, Debian toolchain packages, and upstream MinGW v12.0.0 runtime notice. This is not a build or runtime validation.",
+  "project_files_modified_by_verification": false,
+  "cargo_lock_file": "Cargo.lock",
+  "cargo_lock_sha256": "ddb35037184683720b62c79e0863414e826b38569b26ed834c5c0e846c5bf83d",
+  "toolchain_records": {
+    "rust": {
+      "record_filename": "rust-toolchain-manifest.json",
+      "record_sha256": "d0c140af8dce1530fa6170515e17ec8a1c2f51a02943dd7eb8f97fca751c4e7f",
+      "contents": [
+        {
+          "component": "rustc-1.99.1-x86_64-unknown-linux-gnu",
+          "sha256": "2ff05ff9c08a90861e7f6e4065b40a8b87463b4576186fd613871c3e37f2091f",
+          "url": "https://static.rust-lang.org/dist/rustc-1.99.1-x86_64-unknown-linux-gnu.tar.xz"
+        },
+        {
+          "component": "cargo-1.99.1-x86_64-unknown-linux-gnu",
+          "sha256": "53f3521949404d595efb06a55c12c5658d4ed1c75566f33d3d514eaebe70bd8a",
+          "url": "https://static.rust-lang.org/dist/cargo-1.99.1-x86_64-unknown-linux-gnu.tar.xz"
+        },
+        {
+          "component": "rust-std-1.99.1-x86_64-unknown-linux-gnu",
+          "sha256": "109b074225bf5b9ea3820890876bfdf4ed161adbfaf94b2b4b5984c85ee5d958",
+          "url": "https://static.rust-lang.org/dist/rust-std-1.99.1-x86_64-unknown-linux-gnu.tar.xz"
+        },
+        {
+          "component": "rust-std-1.99.1-x86_64-pc-windows-gnu",
+          "sha256": "b17e3bc962ff24b3bc47a750d838defed85b280746250e3a3ad029e6c1a29dd7",
+          "url": "https://static.rust-lang.org/dist/rust-std-1.99.1-x86_64-pc-windows-gnu.tar.xz"
+        },
+        {
+          "component": "rustfmt-1.99.1-x86_64-unknown-linux-gnu",
+          "sha256": "e3b36c4c7ec3486c059d8067ff48787676612007123aad7a4e8ec12c48ee9ba2",
+          "url": "https://static.rust-lang.org/dist/rustfmt-1.99.1-x86_64-unknown-linux-gnu.tar.xz"
+        },
+        {
+          "component": "clippy-1.99.1-x86_64-unknown-linux-gnu",
+          "sha256": "458339712a058e52cc4522ff9ef8b59cd1ea1340312216cd94194c464a3f6dc5",
+          "url": "https://static.rust-lang.org/dist/clippy-1.99.1-x86_64-unknown-linux-gnu.tar.xz"
+        }
+      ]
+    },
+    "mingw": {
+      "record_filename": "mingw-toolchain-manifest.json",
+      "record_sha256": "3c602ab046c4c79bb289c6ce74bce383cc181cdbb865886ee409705d499f3fd7",
+      "contents": {
+        "source": "Debian trixie main signed InRelease/Packages",
+        "packages": [
+          {
+            "Package": "gcc-mingw-w64-base",
+            "Version": "14.2.0-19+27+b1",
+            "Filename": "pool/main/g/gcc-mingw-w64/gcc-mingw-w64-base_14.2.0-19+27+b1_amd64.deb",
+            "Size": "194268",
+            "SHA256": "8d2c64b886ab4a435a78ddc4cd3b510f149b65fbd6be8472e8f460627562718a"
+          },
+          {
+            "Package": "gcc-mingw-w64-x86-64-posix",
+            "Version": "14.2.0-19+27+b1",
+            "Filename": "pool/main/g/gcc-mingw-w64/gcc-mingw-w64-x86-64-posix_14.2.0-19+27+b1_amd64.deb",
+            "Size": "37567656",
+            "SHA256": "e32d24cfd1482394f16d9a84c1d0a9f5aa08ee826a79acc383c70cc8c23c4fe5"
+          },
+          {
+            "Package": "gcc-mingw-w64-x86-64-posix-runtime",
+            "Version": "14.2.0-19+27+b1",
+            "Filename": "pool/main/g/gcc-mingw-w64/gcc-mingw-w64-x86-64-posix-runtime_14.2.0-19+27+b1_amd64.deb",
+            "Size": "13037152",
+            "SHA256": "c898d96177574a8a7238564a1e799d8ddfed5a3d2ea005510305f9ad466a6f59"
+          },
+          {
+            "Package": "binutils-mingw-w64-x86-64",
+            "Version": "2.44-3+12+b1",
+            "Filename": "pool/main/b/binutils-mingw-w64/binutils-mingw-w64-x86-64_2.44-3+12+b1_amd64.deb",
+            "Size": "3473344",
+            "SHA256": "b53f4a091b16a0d0952b8e3bd6027931641386258f96b37db1f0c62c787221d3"
+          },
+          {
+            "Package": "mingw-w64-common",
+            "Version": "12.0.0-5",
+            "Filename": "pool/main/m/mingw-w64/mingw-w64-common_12.0.0-5_all.deb",
+            "Size": "5792084",
+            "SHA256": "97dce5d0d8aff1cade4786ad4ef5078345477a598829afcac2e7f2fbc5399990"
+          },
+          {
+            "Package": "mingw-w64-x86-64-dev",
+            "Version": "12.0.0-5",
+            "Filename": "pool/main/m/mingw-w64/mingw-w64-x86-64-dev_12.0.0-5_all.deb",
+            "Size": "4871860",
+            "SHA256": "0bf89cf7454cccb49cd2a46a6f7b33896f6ae3a1a2fe33e02c40be6155bbb385"
+          }
+        ]
+      }
+    },
+    "crates": {
+      "record_filename": "vendor-manifest.json",
+      "record_sha256": "c43cef48267486af3b7cda68833b778ba430e7a7e01ffa03b4e95768ba782c83",
+      "contents": {
+        "source_cargo_lock_sha256": "e2925be2c2c4de002bfc6476bfef0c78af8b865ef43bf80ac4e8cf93d936af0a",
+        "verified_packages": [
+          {
+            "name": "itoa",
+            "version": "1.0.19",
+            "url": "https://static.crates.io/crates/itoa/itoa-1.0.19.crate",
+            "sha256": "3bd1574e617a9a6c1f8f8181bd7e841e1f20e4277607ef28945765188d6284d4",
+            "bytes": 16014
+          },
+          {
+            "name": "memchr",
+            "version": "2.8.3",
+            "url": "https://static.crates.io/crates/memchr/memchr-2.8.3.crate",
+            "sha256": "cf8baf1c55e62ffcace7a9f06f4bd9cd3f0c4beb022d3b367256b91b87513d98",
+            "bytes": 99165
+          },
+          {
+            "name": "proc-macro2",
+            "version": "1.0.107",
+            "url": "https://static.crates.io/crates/proc-macro2/proc-macro2-1.0.107.crate",
+            "sha256": "985e7ec9bb745e6ce6535b544d84d6cd6f7ad8bd711c398938ae983b91a766d9",
+            "bytes": 59588
+          },
+          {
+            "name": "quote",
+            "version": "1.0.47",
+            "url": "https://static.crates.io/crates/quote/quote-1.0.47.crate",
+            "sha256": "1fbf4db142a473a8d80c26bbf18454ed458bf8d26c8219c331daecfdbd079001",
+            "bytes": 31622
+          },
+          {
+            "name": "serde",
+            "version": "1.0.229",
+            "url": "https://static.crates.io/crates/serde/serde-1.0.229.crate",
+            "sha256": "4148590afebada386688f18773da617792bf2ef03ffc1e4cbd2b1d45b023e0ba",
+            "bytes": 83669
+          },
+          {
+            "name": "serde_core",
+            "version": "1.0.229",
+            "url": "https://static.crates.io/crates/serde_core/serde_core-1.0.229.crate",
+            "sha256": "67dca2c9c51e58a4791a4b1ed58308b39c64224d349a935ab5039aa360942a48",
+            "bytes": 63100
+          },
+          {
+            "name": "serde_derive",
+            "version": "1.0.229",
+            "url": "https://static.crates.io/crates/serde_derive/serde_derive-1.0.229.crate",
+            "sha256": "e7a5d71263a5a7d47b41f6b3f06ba276f10cc18b0931f1799f710578e2309348",
+            "bytes": 59864
+          },
+          {
+            "name": "serde_json",
+            "version": "1.0.154",
+            "url": "https://static.crates.io/crates/serde_json/serde_json-1.0.154.crate",
+            "sha256": "e7e9cc8b1b85264074fbcc02a88680c4096b1e47df8f739dceb03bf482f04bd6",
+            "bytes": 158079
+          },
+          {
+            "name": "syn",
+            "version": "3.0.10",
+            "url": "https://static.crates.io/crates/syn/syn-3.0.10.crate",
+            "sha256": "4ae9ccbea3a7b0b09443036490c8f34a8b1b760fd345e5c0dae0aac718faea79",
+            "bytes": 314214
+          },
+          {
+            "name": "unicode-ident",
+            "version": "1.0.27",
+            "url": "https://static.crates.io/crates/unicode-ident/unicode-ident-1.0.27.crate",
+            "sha256": "a2c754d6c33795a1c324727428e5a7dedb5b06195f9890bdbcba760d3e246563",
+            "bytes": 48807
+          },
+          {
+            "name": "windows-sys",
+            "version": "0.59.0",
+            "url": "https://static.crates.io/crates/windows-sys/windows-sys-0.59.0.crate",
+            "sha256": "1e38bc4d79ed67fd075bcc251a1c39b32a1776bbe92e5bef1f0bf1f8c531853b",
+            "bytes": 2387323
+          },
+          {
+            "name": "windows-targets",
+            "version": "0.52.6",
+            "url": "https://static.crates.io/crates/windows-targets/windows-targets-0.52.6.crate",
+            "sha256": "9b724f72796e036ab90c1021d4780d4d3d648aca59e491e6b98e725b84e99973",
+            "bytes": 6403
+          },
+          {
+            "name": "windows_aarch64_gnullvm",
+            "version": "0.52.6",
+            "url": "https://static.crates.io/crates/windows_aarch64_gnullvm/windows_aarch64_gnullvm-0.52.6.crate",
+            "sha256": "32a4622180e7a0ec044bb555404c800bc9fd9ec262ec147edd5989ccd0c02cd3",
+            "bytes": 435718
+          },
+          {
+            "name": "windows_aarch64_msvc",
+            "version": "0.52.6",
+            "url": "https://static.crates.io/crates/windows_aarch64_msvc/windows_aarch64_msvc-0.52.6.crate",
+            "sha256": "09ec2a7bb152e2252b53fa7803150007879548bc709c039df7627cabbd05d469",
+            "bytes": 832615
+          },
+          {
+            "name": "windows_i686_gnu",
+            "version": "0.52.6",
+            "url": "https://static.crates.io/crates/windows_i686_gnu/windows_i686_gnu-0.52.6.crate",
+            "sha256": "8e9b5ad5ab802e97eb8e295ac6720e509ee4c243f69d781394014ebfe8bbfa0b",
+            "bytes": 880402
+          },
+          {
+            "name": "windows_i686_gnullvm",
+            "version": "0.52.6",
+            "url": "https://static.crates.io/crates/windows_i686_gnullvm/windows_i686_gnullvm-0.52.6.crate",
+            "sha256": "0eee52d38c090b3caa76c563b86c3a4bd71ef1a819287c19d586d7334ae8ed66",
+            "bytes": 475940
+          },
+          {
+            "name": "windows_i686_msvc",
+            "version": "0.52.6",
+            "url": "https://static.crates.io/crates/windows_i686_msvc/windows_i686_msvc-0.52.6.crate",
+            "sha256": "240948bc05c5e7c6dabba28bf89d89ffce3e303022809e73deaefe4f6ec56c66",
+            "bytes": 901163
+          },
+          {
+            "name": "windows_x86_64_gnu",
+            "version": "0.52.6",
+            "url": "https://static.crates.io/crates/windows_x86_64_gnu/windows_x86_64_gnu-0.52.6.crate",
+            "sha256": "147a5c80aabfbf0c7d901cb5895d1de30ef2907eb21fbbab29ca94c5b08b1a78",
+            "bytes": 836363
+          },
+          {
+            "name": "windows_x86_64_gnullvm",
+            "version": "0.52.6",
+            "url": "https://static.crates.io/crates/windows_x86_64_gnullvm/windows_x86_64_gnullvm-0.52.6.crate",
+            "sha256": "24d5b23dc417412679681396f2b49f3de8c1473deb516bd34410872eff51ed0d",
+            "bytes": 435707
+          },
+          {
+            "name": "windows_x86_64_msvc",
+            "version": "0.52.6",
+            "url": "https://static.crates.io/crates/windows_x86_64_msvc/windows_x86_64_msvc-0.52.6.crate",
+            "sha256": "589f6da84c646204747d1270a2a5661ea66ed1cced2631d546fdfb155959f9ec",
+            "bytes": 832564
+          },
+          {
+            "name": "zmij",
+            "version": "1.0.23",
+            "url": "https://static.crates.io/crates/zmij/zmij-1.0.23.crate",
+            "sha256": "29666d0abbfad1e3dc4dcf6144730dd3a3ab225bbbdac83319345b1b44ccfc1b",
+            "bytes": 28612
+          }
+        ]
+      }
+    }
+  },
+  "summary": {
+    "notices_total": 46,
+    "notices_matched": 46,
+    "crate_notice_files_matched": 42,
+    "runtime_notice_files_matched": 4,
+    "locked_crate_archives_verified": 21,
+    "mismatches": [],
+    "license_hash_manifest_sha256": "d8a343b1b2de1eb511e9550489ea6d7f6cc7ab4968ba5eda2495be4ec31a2449"
+  },
+  "verified_notices": [
+    {
+      "packaged_file": "third_party_licenses/itoa-1.0.19/LICENSE-APACHE",
+      "group": "crate",
+      "bytes": 9723,
+      "packaged_sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "reference_sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "itoa",
+        "version": "1.0.19",
+        "archive_url": "https://static.crates.io/crates/itoa/itoa-1.0.19.crate",
+        "archive_sha256": "3bd1574e617a9a6c1f8f8181bd7e841e1f20e4277607ef28945765188d6284d4",
+        "file_in_archive": "itoa-1.0.19/LICENSE-APACHE"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/itoa-1.0.19/LICENSE-MIT",
+      "group": "crate",
+      "bytes": 1023,
+      "packaged_sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "reference_sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "itoa",
+        "version": "1.0.19",
+        "archive_url": "https://static.crates.io/crates/itoa/itoa-1.0.19.crate",
+        "archive_sha256": "3bd1574e617a9a6c1f8f8181bd7e841e1f20e4277607ef28945765188d6284d4",
+        "file_in_archive": "itoa-1.0.19/LICENSE-MIT"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/memchr-2.8.3/COPYING",
+      "group": "crate",
+      "bytes": 126,
+      "packaged_sha256": "01c266bced4a434da0051174d6bee16a4c82cf634e2679b6155d40d75012390f",
+      "reference_sha256": "01c266bced4a434da0051174d6bee16a4c82cf634e2679b6155d40d75012390f",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "memchr",
+        "version": "2.8.3",
+        "archive_url": "https://static.crates.io/crates/memchr/memchr-2.8.3.crate",
+        "archive_sha256": "cf8baf1c55e62ffcace7a9f06f4bd9cd3f0c4beb022d3b367256b91b87513d98",
+        "file_in_archive": "memchr-2.8.3/COPYING"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/memchr-2.8.3/LICENSE-MIT",
+      "group": "crate",
+      "bytes": 1081,
+      "packaged_sha256": "0f96a83840e146e43c0ec96a22ec1f392e0680e6c1226e6f3ba87e0740af850f",
+      "reference_sha256": "0f96a83840e146e43c0ec96a22ec1f392e0680e6c1226e6f3ba87e0740af850f",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "memchr",
+        "version": "2.8.3",
+        "archive_url": "https://static.crates.io/crates/memchr/memchr-2.8.3.crate",
+        "archive_sha256": "cf8baf1c55e62ffcace7a9f06f4bd9cd3f0c4beb022d3b367256b91b87513d98",
+        "file_in_archive": "memchr-2.8.3/LICENSE-MIT"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/mingw-w64/COPYING.MinGW-w64-runtime.txt",
+      "group": "runtime",
+      "bytes": 10936,
+      "packaged_sha256": "e9b2dc02451ea29092a1f25fa0f3c07207ed421f1807dffb0c4e6dce69dee7bd",
+      "reference_sha256": "e9b2dc02451ea29092a1f25fa0f3c07207ed421f1807dffb0c4e6dce69dee7bd",
+      "byte_identical": true,
+      "reference": {
+        "kind": "upstream-tagged-source",
+        "project": "mingw-w64",
+        "version": "v12.0.0",
+        "url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/v12.0.0/COPYING.MinGW-w64-runtime/COPYING.MinGW-w64-runtime.txt",
+        "file_in_repository": "COPYING.MinGW-w64-runtime/COPYING.MinGW-w64-runtime.txt",
+        "git_blob_sha1": "ca6a077e24b81d4f0ae9b952b6fbcaf370a78d6a"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/mingw-w64/gcc-mingw-w64-copyright.txt",
+      "group": "runtime",
+      "bytes": 75729,
+      "packaged_sha256": "f891d7e0c56f503a92c7258d540b3d8215852d8387cbca8f1f07c6f4b6e67da6",
+      "reference_sha256": "f891d7e0c56f503a92c7258d540b3d8215852d8387cbca8f1f07c6f4b6e67da6",
+      "byte_identical": true,
+      "reference": {
+        "kind": "debian-package",
+        "manifest_record": "mingw-toolchain-manifest.json",
+        "package": "gcc-mingw-w64-base",
+        "version": "14.2.0-19+27+b1",
+        "file_in_package": "usr/share/doc/gcc-mingw-w64-base/copyright"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/mingw-w64/mingw-w64-copyright.txt",
+      "group": "runtime",
+      "bytes": 41584,
+      "packaged_sha256": "50e5bb66d222c7d4692c2d13670ddcd3664779358e389a026b69a0e0e18e7be5",
+      "reference_sha256": "50e5bb66d222c7d4692c2d13670ddcd3664779358e389a026b69a0e0e18e7be5",
+      "byte_identical": true,
+      "reference": {
+        "kind": "debian-package",
+        "manifest_record": "mingw-toolchain-manifest.json",
+        "package": "mingw-w64-common",
+        "version": "12.0.0-5",
+        "file_in_package": "usr/share/doc/mingw-w64-common/copyright"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/proc-macro2-1.0.107/LICENSE-APACHE",
+      "group": "crate",
+      "bytes": 9723,
+      "packaged_sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "reference_sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "proc-macro2",
+        "version": "1.0.107",
+        "archive_url": "https://static.crates.io/crates/proc-macro2/proc-macro2-1.0.107.crate",
+        "archive_sha256": "985e7ec9bb745e6ce6535b544d84d6cd6f7ad8bd711c398938ae983b91a766d9",
+        "file_in_archive": "proc-macro2-1.0.107/LICENSE-APACHE"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/proc-macro2-1.0.107/LICENSE-MIT",
+      "group": "crate",
+      "bytes": 1023,
+      "packaged_sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "reference_sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "proc-macro2",
+        "version": "1.0.107",
+        "archive_url": "https://static.crates.io/crates/proc-macro2/proc-macro2-1.0.107.crate",
+        "archive_sha256": "985e7ec9bb745e6ce6535b544d84d6cd6f7ad8bd711c398938ae983b91a766d9",
+        "file_in_archive": "proc-macro2-1.0.107/LICENSE-MIT"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/quote-1.0.47/LICENSE-APACHE",
+      "group": "crate",
+      "bytes": 9723,
+      "packaged_sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "reference_sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "quote",
+        "version": "1.0.47",
+        "archive_url": "https://static.crates.io/crates/quote/quote-1.0.47.crate",
+        "archive_sha256": "1fbf4db142a473a8d80c26bbf18454ed458bf8d26c8219c331daecfdbd079001",
+        "file_in_archive": "quote-1.0.47/LICENSE-APACHE"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/quote-1.0.47/LICENSE-MIT",
+      "group": "crate",
+      "bytes": 1023,
+      "packaged_sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "reference_sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "quote",
+        "version": "1.0.47",
+        "archive_url": "https://static.crates.io/crates/quote/quote-1.0.47.crate",
+        "archive_sha256": "1fbf4db142a473a8d80c26bbf18454ed458bf8d26c8219c331daecfdbd079001",
+        "file_in_archive": "quote-1.0.47/LICENSE-MIT"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/rust-standard-library/COPYRIGHT-library.html",
+      "group": "runtime",
+      "bytes": 1499465,
+      "packaged_sha256": "5647be074c8edf7339fd863055923a8fc80bc5610a8d4661ec3b767b9d392c27",
+      "reference_sha256": "5647be074c8edf7339fd863055923a8fc80bc5610a8d4661ec3b767b9d392c27",
+      "byte_identical": true,
+      "reference": {
+        "kind": "rust-official-component",
+        "manifest_record": "rust-toolchain-manifest.json",
+        "component": "rustc-1.99.1-x86_64-unknown-linux-gnu",
+        "file_in_component_archive": "rustc/share/doc/rust/COPYRIGHT-library.html"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/serde-1.0.229/LICENSE-APACHE",
+      "group": "crate",
+      "bytes": 9723,
+      "packaged_sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "reference_sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "serde",
+        "version": "1.0.229",
+        "archive_url": "https://static.crates.io/crates/serde/serde-1.0.229.crate",
+        "archive_sha256": "4148590afebada386688f18773da617792bf2ef03ffc1e4cbd2b1d45b023e0ba",
+        "file_in_archive": "serde-1.0.229/LICENSE-APACHE"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/serde-1.0.229/LICENSE-MIT",
+      "group": "crate",
+      "bytes": 1023,
+      "packaged_sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "reference_sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "serde",
+        "version": "1.0.229",
+        "archive_url": "https://static.crates.io/crates/serde/serde-1.0.229.crate",
+        "archive_sha256": "4148590afebada386688f18773da617792bf2ef03ffc1e4cbd2b1d45b023e0ba",
+        "file_in_archive": "serde-1.0.229/LICENSE-MIT"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/serde_core-1.0.229/LICENSE-APACHE",
+      "group": "crate",
+      "bytes": 9723,
+      "packaged_sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "reference_sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "serde_core",
+        "version": "1.0.229",
+        "archive_url": "https://static.crates.io/crates/serde_core/serde_core-1.0.229.crate",
+        "archive_sha256": "67dca2c9c51e58a4791a4b1ed58308b39c64224d349a935ab5039aa360942a48",
+        "file_in_archive": "serde_core-1.0.229/LICENSE-APACHE"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/serde_core-1.0.229/LICENSE-MIT",
+      "group": "crate",
+      "bytes": 1023,
+      "packaged_sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "reference_sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "serde_core",
+        "version": "1.0.229",
+        "archive_url": "https://static.crates.io/crates/serde_core/serde_core-1.0.229.crate",
+        "archive_sha256": "67dca2c9c51e58a4791a4b1ed58308b39c64224d349a935ab5039aa360942a48",
+        "file_in_archive": "serde_core-1.0.229/LICENSE-MIT"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/serde_derive-1.0.229/LICENSE-APACHE",
+      "group": "crate",
+      "bytes": 9723,
+      "packaged_sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "reference_sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "serde_derive",
+        "version": "1.0.229",
+        "archive_url": "https://static.crates.io/crates/serde_derive/serde_derive-1.0.229.crate",
+        "archive_sha256": "e7a5d71263a5a7d47b41f6b3f06ba276f10cc18b0931f1799f710578e2309348",
+        "file_in_archive": "serde_derive-1.0.229/LICENSE-APACHE"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/serde_derive-1.0.229/LICENSE-MIT",
+      "group": "crate",
+      "bytes": 1023,
+      "packaged_sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "reference_sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "serde_derive",
+        "version": "1.0.229",
+        "archive_url": "https://static.crates.io/crates/serde_derive/serde_derive-1.0.229.crate",
+        "archive_sha256": "e7a5d71263a5a7d47b41f6b3f06ba276f10cc18b0931f1799f710578e2309348",
+        "file_in_archive": "serde_derive-1.0.229/LICENSE-MIT"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/serde_json-1.0.154/LICENSE-APACHE",
+      "group": "crate",
+      "bytes": 9723,
+      "packaged_sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "reference_sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "serde_json",
+        "version": "1.0.154",
+        "archive_url": "https://static.crates.io/crates/serde_json/serde_json-1.0.154.crate",
+        "archive_sha256": "e7e9cc8b1b85264074fbcc02a88680c4096b1e47df8f739dceb03bf482f04bd6",
+        "file_in_archive": "serde_json-1.0.154/LICENSE-APACHE"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/serde_json-1.0.154/LICENSE-MIT",
+      "group": "crate",
+      "bytes": 1023,
+      "packaged_sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "reference_sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "serde_json",
+        "version": "1.0.154",
+        "archive_url": "https://static.crates.io/crates/serde_json/serde_json-1.0.154.crate",
+        "archive_sha256": "e7e9cc8b1b85264074fbcc02a88680c4096b1e47df8f739dceb03bf482f04bd6",
+        "file_in_archive": "serde_json-1.0.154/LICENSE-MIT"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/syn-3.0.10/LICENSE-APACHE",
+      "group": "crate",
+      "bytes": 9723,
+      "packaged_sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "reference_sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "syn",
+        "version": "3.0.10",
+        "archive_url": "https://static.crates.io/crates/syn/syn-3.0.10.crate",
+        "archive_sha256": "4ae9ccbea3a7b0b09443036490c8f34a8b1b760fd345e5c0dae0aac718faea79",
+        "file_in_archive": "syn-3.0.10/LICENSE-APACHE"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/syn-3.0.10/LICENSE-MIT",
+      "group": "crate",
+      "bytes": 1023,
+      "packaged_sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "reference_sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "syn",
+        "version": "3.0.10",
+        "archive_url": "https://static.crates.io/crates/syn/syn-3.0.10.crate",
+        "archive_sha256": "4ae9ccbea3a7b0b09443036490c8f34a8b1b760fd345e5c0dae0aac718faea79",
+        "file_in_archive": "syn-3.0.10/LICENSE-MIT"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/unicode-ident-1.0.27/LICENSE-APACHE",
+      "group": "crate",
+      "bytes": 9723,
+      "packaged_sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "reference_sha256": "62c7a1e35f56406896d7aa7ca52d0cc0d272ac022b5d2796e7d6905db8a3636a",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "unicode-ident",
+        "version": "1.0.27",
+        "archive_url": "https://static.crates.io/crates/unicode-ident/unicode-ident-1.0.27.crate",
+        "archive_sha256": "a2c754d6c33795a1c324727428e5a7dedb5b06195f9890bdbcba760d3e246563",
+        "file_in_archive": "unicode-ident-1.0.27/LICENSE-APACHE"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/unicode-ident-1.0.27/LICENSE-MIT",
+      "group": "crate",
+      "bytes": 1023,
+      "packaged_sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "reference_sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "unicode-ident",
+        "version": "1.0.27",
+        "archive_url": "https://static.crates.io/crates/unicode-ident/unicode-ident-1.0.27.crate",
+        "archive_sha256": "a2c754d6c33795a1c324727428e5a7dedb5b06195f9890bdbcba760d3e246563",
+        "file_in_archive": "unicode-ident-1.0.27/LICENSE-MIT"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/unicode-ident-1.0.27/LICENSE-UNICODE",
+      "group": "crate",
+      "bytes": 1995,
+      "packaged_sha256": "f7db81051789b729fea528a63ec4c938fdcb93d9d61d97dc8cc2e9df6d47f2a1",
+      "reference_sha256": "f7db81051789b729fea528a63ec4c938fdcb93d9d61d97dc8cc2e9df6d47f2a1",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "unicode-ident",
+        "version": "1.0.27",
+        "archive_url": "https://static.crates.io/crates/unicode-ident/unicode-ident-1.0.27.crate",
+        "archive_sha256": "a2c754d6c33795a1c324727428e5a7dedb5b06195f9890bdbcba760d3e246563",
+        "file_in_archive": "unicode-ident-1.0.27/LICENSE-UNICODE"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/windows-sys-0.59.0/license-apache-2.0",
+      "group": "crate",
+      "bytes": 11351,
+      "packaged_sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+      "reference_sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "windows-sys",
+        "version": "0.59.0",
+        "archive_url": "https://static.crates.io/crates/windows-sys/windows-sys-0.59.0.crate",
+        "archive_sha256": "1e38bc4d79ed67fd075bcc251a1c39b32a1776bbe92e5bef1f0bf1f8c531853b",
+        "file_in_archive": "windows-sys-0.59.0/license-apache-2.0"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/windows-sys-0.59.0/license-mit",
+      "group": "crate",
+      "bytes": 1141,
+      "packaged_sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "reference_sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "windows-sys",
+        "version": "0.59.0",
+        "archive_url": "https://static.crates.io/crates/windows-sys/windows-sys-0.59.0.crate",
+        "archive_sha256": "1e38bc4d79ed67fd075bcc251a1c39b32a1776bbe92e5bef1f0bf1f8c531853b",
+        "file_in_archive": "windows-sys-0.59.0/license-mit"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/windows-targets-0.52.6/license-apache-2.0",
+      "group": "crate",
+      "bytes": 11351,
+      "packaged_sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+      "reference_sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "windows-targets",
+        "version": "0.52.6",
+        "archive_url": "https://static.crates.io/crates/windows-targets/windows-targets-0.52.6.crate",
+        "archive_sha256": "9b724f72796e036ab90c1021d4780d4d3d648aca59e491e6b98e725b84e99973",
+        "file_in_archive": "windows-targets-0.52.6/license-apache-2.0"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/windows-targets-0.52.6/license-mit",
+      "group": "crate",
+      "bytes": 1141,
+      "packaged_sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "reference_sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "windows-targets",
+        "version": "0.52.6",
+        "archive_url": "https://static.crates.io/crates/windows-targets/windows-targets-0.52.6.crate",
+        "archive_sha256": "9b724f72796e036ab90c1021d4780d4d3d648aca59e491e6b98e725b84e99973",
+        "file_in_archive": "windows-targets-0.52.6/license-mit"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/windows_aarch64_gnullvm-0.52.6/license-apache-2.0",
+      "group": "crate",
+      "bytes": 11351,
+      "packaged_sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+      "reference_sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "windows_aarch64_gnullvm",
+        "version": "0.52.6",
+        "archive_url": "https://static.crates.io/crates/windows_aarch64_gnullvm/windows_aarch64_gnullvm-0.52.6.crate",
+        "archive_sha256": "32a4622180e7a0ec044bb555404c800bc9fd9ec262ec147edd5989ccd0c02cd3",
+        "file_in_archive": "windows_aarch64_gnullvm-0.52.6/license-apache-2.0"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/windows_aarch64_gnullvm-0.52.6/license-mit",
+      "group": "crate",
+      "bytes": 1141,
+      "packaged_sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "reference_sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "windows_aarch64_gnullvm",
+        "version": "0.52.6",
+        "archive_url": "https://static.crates.io/crates/windows_aarch64_gnullvm/windows_aarch64_gnullvm-0.52.6.crate",
+        "archive_sha256": "32a4622180e7a0ec044bb555404c800bc9fd9ec262ec147edd5989ccd0c02cd3",
+        "file_in_archive": "windows_aarch64_gnullvm-0.52.6/license-mit"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/windows_aarch64_msvc-0.52.6/license-apache-2.0",
+      "group": "crate",
+      "bytes": 11351,
+      "packaged_sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+      "reference_sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "windows_aarch64_msvc",
+        "version": "0.52.6",
+        "archive_url": "https://static.crates.io/crates/windows_aarch64_msvc/windows_aarch64_msvc-0.52.6.crate",
+        "archive_sha256": "09ec2a7bb152e2252b53fa7803150007879548bc709c039df7627cabbd05d469",
+        "file_in_archive": "windows_aarch64_msvc-0.52.6/license-apache-2.0"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/windows_aarch64_msvc-0.52.6/license-mit",
+      "group": "crate",
+      "bytes": 1141,
+      "packaged_sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "reference_sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "windows_aarch64_msvc",
+        "version": "0.52.6",
+        "archive_url": "https://static.crates.io/crates/windows_aarch64_msvc/windows_aarch64_msvc-0.52.6.crate",
+        "archive_sha256": "09ec2a7bb152e2252b53fa7803150007879548bc709c039df7627cabbd05d469",
+        "file_in_archive": "windows_aarch64_msvc-0.52.6/license-mit"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/windows_i686_gnu-0.52.6/license-apache-2.0",
+      "group": "crate",
+      "bytes": 11351,
+      "packaged_sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+      "reference_sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "windows_i686_gnu",
+        "version": "0.52.6",
+        "archive_url": "https://static.crates.io/crates/windows_i686_gnu/windows_i686_gnu-0.52.6.crate",
+        "archive_sha256": "8e9b5ad5ab802e97eb8e295ac6720e509ee4c243f69d781394014ebfe8bbfa0b",
+        "file_in_archive": "windows_i686_gnu-0.52.6/license-apache-2.0"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/windows_i686_gnu-0.52.6/license-mit",
+      "group": "crate",
+      "bytes": 1141,
+      "packaged_sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "reference_sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "windows_i686_gnu",
+        "version": "0.52.6",
+        "archive_url": "https://static.crates.io/crates/windows_i686_gnu/windows_i686_gnu-0.52.6.crate",
+        "archive_sha256": "8e9b5ad5ab802e97eb8e295ac6720e509ee4c243f69d781394014ebfe8bbfa0b",
+        "file_in_archive": "windows_i686_gnu-0.52.6/license-mit"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/windows_i686_gnullvm-0.52.6/license-apache-2.0",
+      "group": "crate",
+      "bytes": 11351,
+      "packaged_sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+      "reference_sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "windows_i686_gnullvm",
+        "version": "0.52.6",
+        "archive_url": "https://static.crates.io/crates/windows_i686_gnullvm/windows_i686_gnullvm-0.52.6.crate",
+        "archive_sha256": "0eee52d38c090b3caa76c563b86c3a4bd71ef1a819287c19d586d7334ae8ed66",
+        "file_in_archive": "windows_i686_gnullvm-0.52.6/license-apache-2.0"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/windows_i686_gnullvm-0.52.6/license-mit",
+      "group": "crate",
+      "bytes": 1141,
+      "packaged_sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "reference_sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "windows_i686_gnullvm",
+        "version": "0.52.6",
+        "archive_url": "https://static.crates.io/crates/windows_i686_gnullvm/windows_i686_gnullvm-0.52.6.crate",
+        "archive_sha256": "0eee52d38c090b3caa76c563b86c3a4bd71ef1a819287c19d586d7334ae8ed66",
+        "file_in_archive": "windows_i686_gnullvm-0.52.6/license-mit"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/windows_i686_msvc-0.52.6/license-apache-2.0",
+      "group": "crate",
+      "bytes": 11351,
+      "packaged_sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+      "reference_sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "windows_i686_msvc",
+        "version": "0.52.6",
+        "archive_url": "https://static.crates.io/crates/windows_i686_msvc/windows_i686_msvc-0.52.6.crate",
+        "archive_sha256": "240948bc05c5e7c6dabba28bf89d89ffce3e303022809e73deaefe4f6ec56c66",
+        "file_in_archive": "windows_i686_msvc-0.52.6/license-apache-2.0"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/windows_i686_msvc-0.52.6/license-mit",
+      "group": "crate",
+      "bytes": 1141,
+      "packaged_sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "reference_sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "windows_i686_msvc",
+        "version": "0.52.6",
+        "archive_url": "https://static.crates.io/crates/windows_i686_msvc/windows_i686_msvc-0.52.6.crate",
+        "archive_sha256": "240948bc05c5e7c6dabba28bf89d89ffce3e303022809e73deaefe4f6ec56c66",
+        "file_in_archive": "windows_i686_msvc-0.52.6/license-mit"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/windows_x86_64_gnu-0.52.6/license-apache-2.0",
+      "group": "crate",
+      "bytes": 11351,
+      "packaged_sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+      "reference_sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "windows_x86_64_gnu",
+        "version": "0.52.6",
+        "archive_url": "https://static.crates.io/crates/windows_x86_64_gnu/windows_x86_64_gnu-0.52.6.crate",
+        "archive_sha256": "147a5c80aabfbf0c7d901cb5895d1de30ef2907eb21fbbab29ca94c5b08b1a78",
+        "file_in_archive": "windows_x86_64_gnu-0.52.6/license-apache-2.0"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/windows_x86_64_gnu-0.52.6/license-mit",
+      "group": "crate",
+      "bytes": 1141,
+      "packaged_sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "reference_sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "windows_x86_64_gnu",
+        "version": "0.52.6",
+        "archive_url": "https://static.crates.io/crates/windows_x86_64_gnu/windows_x86_64_gnu-0.52.6.crate",
+        "archive_sha256": "147a5c80aabfbf0c7d901cb5895d1de30ef2907eb21fbbab29ca94c5b08b1a78",
+        "file_in_archive": "windows_x86_64_gnu-0.52.6/license-mit"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/windows_x86_64_gnullvm-0.52.6/license-apache-2.0",
+      "group": "crate",
+      "bytes": 11351,
+      "packaged_sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+      "reference_sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "windows_x86_64_gnullvm",
+        "version": "0.52.6",
+        "archive_url": "https://static.crates.io/crates/windows_x86_64_gnullvm/windows_x86_64_gnullvm-0.52.6.crate",
+        "archive_sha256": "24d5b23dc417412679681396f2b49f3de8c1473deb516bd34410872eff51ed0d",
+        "file_in_archive": "windows_x86_64_gnullvm-0.52.6/license-apache-2.0"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/windows_x86_64_gnullvm-0.52.6/license-mit",
+      "group": "crate",
+      "bytes": 1141,
+      "packaged_sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "reference_sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "windows_x86_64_gnullvm",
+        "version": "0.52.6",
+        "archive_url": "https://static.crates.io/crates/windows_x86_64_gnullvm/windows_x86_64_gnullvm-0.52.6.crate",
+        "archive_sha256": "24d5b23dc417412679681396f2b49f3de8c1473deb516bd34410872eff51ed0d",
+        "file_in_archive": "windows_x86_64_gnullvm-0.52.6/license-mit"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/windows_x86_64_msvc-0.52.6/license-apache-2.0",
+      "group": "crate",
+      "bytes": 11351,
+      "packaged_sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+      "reference_sha256": "c16f8dcf1a368b83be78d826ea23de4079fe1b4469a0ab9ee20563f37ff3d44b",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "windows_x86_64_msvc",
+        "version": "0.52.6",
+        "archive_url": "https://static.crates.io/crates/windows_x86_64_msvc/windows_x86_64_msvc-0.52.6.crate",
+        "archive_sha256": "589f6da84c646204747d1270a2a5661ea66ed1cced2631d546fdfb155959f9ec",
+        "file_in_archive": "windows_x86_64_msvc-0.52.6/license-apache-2.0"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/windows_x86_64_msvc-0.52.6/license-mit",
+      "group": "crate",
+      "bytes": 1141,
+      "packaged_sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "reference_sha256": "c2cfccb812fe482101a8f04597dfc5a9991a6b2748266c47ac91b6a5aae15383",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "windows_x86_64_msvc",
+        "version": "0.52.6",
+        "archive_url": "https://static.crates.io/crates/windows_x86_64_msvc/windows_x86_64_msvc-0.52.6.crate",
+        "archive_sha256": "589f6da84c646204747d1270a2a5661ea66ed1cced2631d546fdfb155959f9ec",
+        "file_in_archive": "windows_x86_64_msvc-0.52.6/license-mit"
+      }
+    },
+    {
+      "packaged_file": "third_party_licenses/zmij-1.0.23/LICENSE-MIT",
+      "group": "crate",
+      "bytes": 1023,
+      "packaged_sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "reference_sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3",
+      "byte_identical": true,
+      "reference": {
+        "kind": "locked-crate-archive",
+        "manifest_record": "vendor-manifest.json",
+        "name": "zmij",
+        "version": "1.0.23",
+        "archive_url": "https://static.crates.io/crates/zmij/zmij-1.0.23.crate",
+        "archive_sha256": "29666d0abbfad1e3dc4dcf6144730dd3a3ab225bbbdac83319345b1b44ccfc1b",
+        "file_in_archive": "zmij-1.0.23/LICENSE-MIT"
+      }
+    }
+  ]
+}

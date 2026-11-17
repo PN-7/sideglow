@@ -1,0 +1,29 @@
+{
+  "packaged_matches": [
+    {
+      "packaged_file": "third_party_licenses/rust-standard-library/COPYRIGHT-library.html",
+      "sha256": "5647be074c8edf7339fd863055923a8fc80bc5610a8d4661ec3b767b9d392c27",
+      "actual_toolchain_file": "rust/share/doc/rust/COPYRIGHT-library.html",
+      "byte_identical": true
+    },
+    {
+      "packaged_file": "third_party_licenses/mingw-w64/mingw-w64-copyright.txt",
+      "sha256": "50e5bb66d222c7d4692c2d13670ddcd3664779358e389a026b69a0e0e18e7be5",
+      "actual_toolchain_file": "mingw/usr/share/doc/mingw-w64-common/copyright",
+      "byte_identical": true
+    },
+    {
+      "packaged_file": "third_party_licenses/mingw-w64/gcc-mingw-w64-copyright.txt",
+      "sha256": "f891d7e0c56f503a92c7258d540b3d8215852d8387cbca8f1f07c6f4b6e67da6",
+      "actual_toolchain_file": "mingw/usr/share/doc/gcc-mingw-w64-base/copyright",
+      "byte_identical": true
+    }
+  ],
+  "additional_upstream_runtime_notice": {
+    "url": "https://raw.githubusercontent.com/mingw-w64/mingw-w64/v12.0.0/COPYING.MinGW-w64-runtime/COPYING.MinGW-w64-runtime.txt",
+    "git_blob_sha1": "ca6a077e24b81d4f0ae9b952b6fbcaf370a78d6a",
+    "path": "third_party_licenses/mingw-w64/COPYING.MinGW-w64-runtime.txt",
+    "bytes": 10936,
+    "sha256": "e9b2dc02451ea29092a1f25fa0f3c07207ed421f1807dffb0c4e6dce69dee7bd"
+  }
+}

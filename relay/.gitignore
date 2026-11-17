@@ -1,0 +1,6 @@
+config.json
+.state/
+*.key
+*.pem
+.env
+node_modules/

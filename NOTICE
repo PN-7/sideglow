@@ -1,0 +1,30 @@
+Sideglow — licensing and attribution
+
+The maintained Sideglow project source and accompanying original resources
+are provided under the Mozilla Public License, version 2.0 (MPL-2.0).
+See LICENSE and docs/LICENSING.md.
+
+This Source Code Form is subject to the terms of the Mozilla Public
+License, v. 2.0. If a copy of the MPL was not distributed with this
+file, You can obtain one at https://mozilla.org/MPL/2.0/.
+
+This notice also covers first-party files that cannot conveniently contain
+a comment, including locale JSON, example configuration JSON and assets.
+Third-party files and their original notices are excluded from that scope.
+
+Sideglow continues the project previously named Whisper Overlay. The
+development history described in docs/LICENSING.md does not offer the
+first-party source in this public release under an alternative MIT license.
+Permissions validly granted for earlier individual copies remain unchanged.
+
+External libraries, runtime components and their copyright holders retain
+their original licenses. See THIRD_PARTY_NOTICES.md and third_party_licenses/.
+No third-party package is relicensed to MPL merely by inclusion here.
+
+The Windows release archive includes the matching editable project source,
+build scripts, Cargo.lock, locale files and license notices alongside the
+executable. Preserve source availability and applicable notices when
+redistributing a compiled or modified version.
+
+The evidence and limits of the provenance review are in docs/PROVENANCE.md.
+This notice does not certify independent authorship of every source line.

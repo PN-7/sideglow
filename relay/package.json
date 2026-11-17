@@ -1,0 +1,15 @@
+{
+  "name": "sideglow-relay",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node main.mjs --config config.json",
+    "test": "node --test test/*.test.mjs",
+    "key": "node --input-type=module -e \"import {randomBytes} from 'node:crypto'; process.stdout.write(randomBytes(32).toString('base64url') + '\\n')\""
+  },
+  "license": "MPL-2.0"
+}

@@ -1,0 +1,22 @@
+{
+  "channelId": "123456789012345678",
+  "botTokenEnv": "DISCORD_BOT_TOKEN",
+  "webhookUrlEnv": "DISCORD_WEBHOOK_URL",
+  "listen": {
+    "host": "127.0.0.1",
+    "port": 8787
+  },
+  "stateDirectory": ".state",
+  "users": [
+    {
+      "id": "owner",
+      "displayName": "Owner · Overlay",
+      "accessKeyEnv": "SIDEGLOW_OWNER_KEY"
+    },
+    {
+      "id": "friend",
+      "displayName": "Friend · Overlay",
+      "accessKeyEnv": "SIDEGLOW_FRIEND_KEY"
+    }
+  ]
+}
