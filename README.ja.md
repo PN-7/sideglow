@@ -40,8 +40,9 @@ RustとWindowsのネイティブUIで実装し、小さなウィンドウと必�
 
 ## ダウンロードと起動
 
-**現在、このリポジトリではソースを公開しています。GitHub Releasesでの実行ファイルの配布は、まだ公開していません。** GitHubの**Code → Download ZIP**でダウンロードされるのはソースのZIPです。自分で実行ファイルを作る場合は、下記の[ソースからビルドする](#ソースからビルドする)を参照してください。
+Windows x64用の実行ファイルは[GitHub Releases](https://github.com/PN-7/sideglow/releases)からダウンロードできます。配布ZIPをダウンロードし、展開してから使用してください。
 
+GitHubの **Code → Download ZIP** でダウンロードされるのは、実行ファイルではなくソースコードのZIPです。自分でビルドする場合は、下記の[ソースからビルドする](#ソースからビルドする)を参照してください。
 Windows x64用の実行ファイルが含まれる配布ZIPを受け取った場合:
 
 1. Windows x64用Sideglowの配布ZIPを用意します。
